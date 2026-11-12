@@ -17,7 +17,7 @@ L'audit statique et dynamique du module d'origine a mis en évidence **6 vulnér
 Pour sécuriser durablement ce composant, l'architecture a été revue selon les standards du **C++ moderne** :
 * **Application de la Règle de 0 & RAII** : Remplacement des allocations manuelles (`char*`, `new`/`delete`) par `std::string` pour garantir une gestion automatique, sûre et sans fuite de la mémoire.
 * **Programmation défensive** : Validation systématique des pointeurs entrants (`nullptr`) dans le constructeur et les méthodes de mutation.
-* **Portabilité multi-compilateurs** : Compilation validée sous **Embarcadero C++Builder** (Windows) et **Visual Studio MSVC x64** (avec AddressSanitizer) ainsi que compatibilité standard GCC/Clang.
+* * **Portabilité multi-compilateurs** : Compilation validée sous **Borland C++Builder 5** (environnement Legacy C++98) et **Visual Studio MSVC x64** (C++ moderne avec AddressSanitizer), ainsi que compatibilité standard GCC/Clang.
 
 ## 🚀 3. Validation et Tests
 
